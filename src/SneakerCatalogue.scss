@@ -1,0 +1,64 @@
+@import 'global';
+.catalogue-container{
+    border-radius: 10px;
+    width: 340px;
+    height: 250px;   
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10rem;
+    right: 2.4rem;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    p:last-child{
+        font-size: $Font-size;
+        color: $Dark-grayish-blue;
+    }
+}
+h3{
+    color: $Very-vark-blue;
+    padding: 2rem;
+    border-bottom: 1px solid $Grayish-blue;
+    font-size: 2rem;
+    content: $Very-vark-blue;
+    text-transform: capitalize;
+}
+.inner{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img:first-child{
+        width: 60px;
+    }
+}
+.checkout{
+    background-color: $Orange;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 2rem;
+    margin-top: 0;
+    display: block;
+    font-weight: $Weights700;
+    font-size: 1.7rem;
+}
+.fs-wrapper{
+    margin-left: -2rem;
+    p{
+        font-size: $Font-size;
+        text-transform: capitalize;
+        color: $Dark-grayish-blue;
+        margin-bottom: 0.4rem;
+    }
+}
+.sec-wrapper{
+    .mark-price-quantity{
+        color: $Dark-grayish-blue;
+    }
+    .total{
+        margin-left: 1.5rem;
+        font-weight: $Weights700;
+        color: $Very-vark-blue;
+    }
+    font-size: 1.5rem;
+}

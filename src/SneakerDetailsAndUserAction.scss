@@ -1,0 +1,87 @@
+@import 'global';
+
+#details-action{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.details{
+    span{
+        font-size: 1.4rem;
+        display: block;
+        margin-bottom: 1.5rem;
+        color: $Orange;
+        text-transform: uppercase;
+        font-weight: $Weights700;
+    }
+    h1{
+        text-transform: capitalize;
+        font-size: 2.8rem;
+        font-weight: $Weights700;
+        color: $Very-vark-blue;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: $Font-size;
+        color: $Dark-grayish-blue;
+        line-height: 1.7em;
+        max-width: 400px;
+    }
+}
+.values{
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2.0rem;
+        span:nth-child(1){
+            font-size: 20px;
+            font-weight: $Weights700;
+        }
+        span:nth-child(2){
+            background-color: $Pale-orange;
+            color: $Orange;
+            border-radius: 3px;
+            padding: 3px;
+            font-weight: $Weights700;
+            font-size: 12px;
+        }
+    }
+    #discount{
+        display: block;
+        margin-top: 15px;
+        font-size: 15px;
+        color: $Dark-grayish-blue;
+        text-decoration: line-through;
+    }
+}
+.action{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    button:first-child{
+        background-color: $Light-grayish-blue;
+        width: 35%;
+        span{
+            &:nth-child(1), &:nth-child(3){
+                padding: 0 8px;
+                color: $Orange;
+                font-weight: $Weights700;
+                font-size: 20px;
+            }
+            &:nth-child(2){
+                font-size: 20px;
+            }
+        }
+    }button:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.0rem;
+        width: 65%;
+        background-color: $Orange;
+        color: #fff;
+        font-weight: $Weights700;font-size: 15px;
+    }
+}
